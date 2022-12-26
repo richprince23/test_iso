@@ -23,7 +23,7 @@ class _MyHomePageState extends State<MyHomePage> {
         actions: [Icon(FontAwesomeIcons.plusCircle)],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(20.0),
+        padding: const EdgeInsets.all(40.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           mainAxisSize: MainAxisSize.min,
@@ -39,6 +39,17 @@ class _MyHomePageState extends State<MyHomePage> {
                     borderSide: BorderSide(color: Colors.pink)),
                 labelText: 'Medication name',
               ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            OutlinedButton(
+              onPressed: () {},
+              child: Text("Save"),
+              style: OutlinedButton.styleFrom(
+                  elevation: 0,
+                  padding: const EdgeInsets.all(20),
+                  fixedSize: const Size(200, 50)),
             ),
           ],
         ),
